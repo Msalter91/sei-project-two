@@ -1,1 +1,8 @@
-GET https://pokeapi.co/api/v2//
+GET https://pokeapi.co/api/v2/pokemon-species
+
+###
+
+
+GET https://pokeapi.co/api/v2/pokemon-species/pikachu
+
+
