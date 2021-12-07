@@ -1,15 +1,18 @@
+import { Link } from 'react-router-dom' 
+
 function Nav () {
   return (
-    <nav className= "navbar">
-      <a className= "navbar-item"> 
-        {' '}Home 
-      </a>
-      <a className= "navbar-item"> 
-        {' '}Pokédex 
-      </a>
-      <a className= "navbar-item"> 
-        {' '}Quiz 
-      </a>
+    <nav className= "navbar is-dark">
+      <div className= "container">
+        <div className="navbar-brand">
+          <Link to="/" className= "navbar-item"> 
+            {' '}Home 
+          </Link>
+          <Link to="/pokeIndex" className= "navbar-item"> 
+            {' '}Pokédex 
+          </Link>
+        </div>
+      </div>
     </nav>  
   )
 }
