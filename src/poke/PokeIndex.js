@@ -1,23 +1,19 @@
 import React from 'react'
-import axios from 'axios'
 
 import PokeCard from './PokeCard'
+
+import { getAllPokemon } from '../lib/api'
 
 
 function PokeIndex () {
 
   const [pokemon, setPokemon] = React.useState([])
   const [searchValue, setSearchValue] = React.useState('')
- 
 
   React.useEffect(() => {
     const getPokemonData = async () => {
-      const result = await axios.get('https://pokeapi.co/api/v2/pokemon', {
-        params: {
-          offset: 0,
-          limit: 898,
-        },
-      })
+      const result = await getAllPokemon()
+
       result ? displayPokemon(result.data) : console.log('waiting') 
     } 
     getPokemonData()
