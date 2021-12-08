@@ -11,12 +11,10 @@ export function getAllPokemon() {
   })
 }
 
-export function decideShiny (isShiny) {
-  const randomNumber = Math.floor(Math.random() * 100)
-  if (randomNumber === 99) {
-    isShiny = true
-  }
-  console.log(randomNumber)
-  return isShiny 
+export function getBasicInfo (pokemonid) {
+  return axios.get(`https://pokeapi.co/api/v2/pokemon/${pokemonid}`)
+}
+export function getDetailedInfo (pokemonid) {
+  return axios.get(`https://pokeapi.co/api/v2/pokemon-species/${pokemonid}`)
 }
 

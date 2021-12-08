@@ -1,5 +1,6 @@
 import React from 'react'
 import { BrowserRouter, Switch, Route } from 'react-router-dom'
+import Notification from 'react-notify-toast'
 
 
 import Home from './common/Home'
@@ -12,6 +13,7 @@ import PokeShow from './poke/PokeShow'
 function App() {
   return (
     <BrowserRouter>
+      <Notification />
       <Nav />
       <Switch >
         <Route exact path ="/">

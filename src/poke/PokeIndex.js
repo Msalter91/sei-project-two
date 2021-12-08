@@ -12,9 +12,13 @@ function PokeIndex () {
 
   React.useEffect(() => {
     const getPokemonData = async () => {
-      const result = await getAllPokemon()
+      try {
+        const result = await getAllPokemon()
+        result ? displayPokemon(result.data) : console.log('waiting') 
+      } catch (err) {
+        console.log(err)
+      }
 
-      result ? displayPokemon(result.data) : console.log('waiting') 
     } 
     getPokemonData()
   },[])
