@@ -64,13 +64,6 @@
   background-blend-mode: screen, color-dodge, overlay, difference, normal;
 }
 
-.button.next.button {
-  margin-left: 100px;
-}
-
-.button.previous.button {
-  margin-right: 5px;
-}
 
 .normal {
   background-color: rgba(168,167,122, 0.5)
@@ -130,7 +123,7 @@
 }
 
 .dark {
-  background-color: rgab(112,87,70, 0.5)
+  background-color: rgba(112,87,70, 0.5)
 }
 
 .dragon {
