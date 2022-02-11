@@ -47,7 +47,7 @@ The homepage is a simple hero image made with Bulma’s built in hero class. It 
 
 ## Index
 
-The Poke-Api contains a vast amount of data, often nested several layers deep. For the index page we only needed the name and the image. However, the image link is not directly available from the GET endpoint for all Pokémon. So, we had to create a workaround that used data from the available data to pull an image from a separate Pokémon image hosting site. 
+The Poke-API contains a vast amount of data, often nested several layers deep. For the index page we only needed the name and the image. However, the image link is not directly available from the GET endpoint for all Pokémon. So, we had to create a workaround that used data from the available data to pull an image from a separate Pokémon image hosting site. 
 
 ![Javascript-code](/readMeAssets/imageGrabber.png?raw=true)
 
@@ -110,13 +110,13 @@ Both the error and loading components are set in state. This makes it impossible
 
 ## Challenges Encountered
 
-- Managing the nested data and size of responses from the Poke Api
+- Managing the nested data and size of responses from the Poke-API
 - Working with multiple axios requests on a single page 
 
 ## Wins 
 
 - Mobile responsive design 
-- Working with such a complicated api
+- Working with such a complicated API
 - Working efficiently in a pair
 
 ## Known Bugs 
@@ -124,7 +124,7 @@ Both the error and loading components are set in state. This makes it impossible
 
 ## Future Improvements 
 
-We underestimated the challenges that a complex api threw at us so the improvements are largely based on that. 
+We underestimated the challenges that a complex API threw at us so the improvements are largely based on that. 
 - With more time we'd like to work out a more elegant solution for loading the images. 
 - Adding Pokemon Forms route for the Pokemon with forms 
 
